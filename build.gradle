@@ -1,5 +1,5 @@
 plugins {
-    id 'java'
+    id 'application'
 }
 
 group 'com.hazelcast.examples'
@@ -7,13 +7,10 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
-    maven {
-        url 'https://repository.hazelcast.com/release/'
-    }
 }
 
 dependencies {
-    implementation 'com.hazelcast:hazelcast-enterprise:5.2.3'
+    implementation 'com.hazelcast:hazelcast:5.2.3'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
